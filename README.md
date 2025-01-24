@@ -12,15 +12,6 @@ This guide will help you set up and run the Near-Earth Object (NEO) Data Pipelin
     - Flask
     - Requests
     - Pandas
-# 📁 Project Structure
-bash
-Copy
-Edit
-project-root/
-├── app.py              # Main Flask application
-├── data.db             # SQLite database (auto-created)
-├── transformed_data.csv # CSV export (auto-created after export)
-└── README.md           # Project documentation
 # 🚀 Running the Application
 1. Clone the repository:
 - git clone <repository_url>
