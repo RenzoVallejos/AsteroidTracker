@@ -12,9 +12,7 @@ This guide will help you set up and run the Near-Earth Object (NEO) Data Pipelin
     - Flask
     - Requests
     - Pandas
-   ```bash
-   pip install flask requests pandas
-📁 Project Structure
+## 📁 Project Structure
 bash
 Copy
 Edit
@@ -23,24 +21,17 @@ project-root/
 ├── data.db             # SQLite database (auto-created)
 ├── transformed_data.csv # CSV export (auto-created after export)
 └── README.md           # Project documentation
-🚀 Running the Application
-Clone the repository:
+## 🚀 Running the Application
+2️1️⃣Clone the repository:
+- git clone <repository_url>
+- cd <repository_directory>
+  2️⃣ Run the Flask server:
+- python app.py
+  3️⃣ Access the endpoints:
+- Open your browser and visit: http://127.0.0.1:5000/
 
-bash
-Copy
-Edit
-git clone <repository_url>
-cd <repository_directory>
-Run the Flask server:
 
-bash
-Copy
-Edit
-python app.py
-Access the endpoints:
-
-Open your browser and visit: http://127.0.0.1:5000/
-🔗 Endpoints Overview
+## 🔗 Endpoints Overview
 1️⃣ Fetch and Store Data
 URL: /fetch-and-store
 Method: GET
@@ -93,11 +84,7 @@ Edit
 "velocity_kph": "123456.7"
 }
 }
-📝 Notes
+## 📝 Notes
 Replace DEMO_KEY in the NASA API URL with your personal NASA API Key.
 The SQLite database file (data.db) is created automatically.
 The CSV export file (transformed_data.csv) will appear in the project directory after the /export endpoint is accessed.
-📜 License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-For contributions or issues, feel free to submit a pull request or open an issue.
